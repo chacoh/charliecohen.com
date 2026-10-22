@@ -7,62 +7,237 @@
 <meta name="description" content="For the 2023-2024 Baja competition season, I designed our engine subframes. The subframes locate the engine, absorb vibrations from the engine to prevent fatigue failures in the frame, and must be able to last for at least forty hours.">
 <link rel="icon" href="../favicon.png">
 <link rel="preload" href="../assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/style.css">
+<script>if(window.matchMedia&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window)document.documentElement.classList.add('mo');</script>
+<style>
+.SITE_HEADER-dd0{inset:0;width:100%;height:100%}
+.SITE_HEADER-dd1{left:calc(-490*var(--u) + 50%);top:0;width:calc(980*var(--u));height:calc(62*var(--u))}
+#comp-m1b6xkbi{left:calc(30*var(--u));top:0;width:calc(-60*var(--u) + 100%);height:calc(53*var(--u))}
+#comp-m1b6xkbo15{left:calc(30*var(--u));top:0;width:calc(-20.6*var(--u) + 34.09%);height:calc(53*var(--u))}
+#comp-m1b6xkbs2{left:calc(-58.1*var(--u) + 17.03%);top:calc(21*var(--u));width:calc(156*var(--u));height:calc(19*var(--u))}
+.comp-m1b6xkbs2-dml0{left:calc(47.5*var(--u));top:calc(-1.7*var(--u));width:calc(61*var(--u));height:calc(22.4*var(--u))}
+#comp-m1b6xkbm1{left:calc(9.4*var(--u) + 34.09%);top:0;width:calc(-19.9*var(--u) + 32.97%);height:calc(53*var(--u))}
+#comp-m1js20ow{left:calc(153.4*var(--u) + 34.09%);top:calc(21*var(--u));width:calc(156*var(--u));height:calc(19*var(--u))}
+.comp-m1js20ow-dml0{left:calc(56.2*var(--u));top:calc(-1.7*var(--u));width:calc(43.6*var(--u));height:calc(22.4*var(--u))}
+#comp-m1b6xkbt17{left:calc(-10.1*var(--u) + 67.03%);top:0;width:calc(-19.9*var(--u) + 32.97%);height:calc(53*var(--u))}
+#comp-m1js23tu{left:calc(-331*var(--u) + 100%);top:calc(21*var(--u));width:calc(156*var(--u));height:calc(19*var(--u))}
+.comp-m1js23tu-dml0{left:calc(46.7*var(--u));top:calc(-1.7*var(--u));width:calc(62.6*var(--u));height:calc(22.4*var(--u))}
+#comp-m1b6xkbu6{left:calc(-120*var(--u) + 100%);top:calc(12*var(--u));width:calc(75*var(--u));height:calc(31*var(--u))}
+#comp-m1b6xkbv5{left:calc(-120*var(--u) + 100%);top:calc(12*var(--u));width:calc(75*var(--u));height:calc(31*var(--u))}
+.comp-m1b6xkbv5-ds0{left:calc(25*var(--u));top:calc(-9.5*var(--u));width:calc(50*var(--u));height:calc(50*var(--u))}
+#comp-m1bgra55{left:calc(80*var(--u));top:calc(40*var(--u));width:calc(-160*var(--u) + 100%);height:calc(622*var(--u))}
+#comp-m1bgra556{left:calc(80*var(--u));top:calc(40*var(--u));width:calc(-49.8*var(--u) + 31.03%);height:calc(622*var(--u))}
+#comp-m1bgra561{left:calc(30.2*var(--u) + 31.03%);top:calc(40*var(--u));width:calc(-110.2*var(--u) + 68.97%);height:calc(622*var(--u))}
+.comp-m1bgra561-dmd0{inset:0;width:100%;height:100%}
+.comp-m1bgra561-dmm0{inset:0;width:100%;height:100%}
+#comp-m1bgra57{left:calc(80*var(--u));top:calc(155*var(--u));width:calc(-160*var(--u) + 100%);height:calc(519*var(--u))}
+#comp-m1bgra576{left:calc(80*var(--u));top:calc(155*var(--u));width:calc(-80*var(--u) + 50%);height:calc(519*var(--u))}
+.comp-m1bgra576-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bgra5712{left:calc(-193*var(--u) + 25%);top:calc(228*var(--u));width:calc(465*var(--u));height:auto}
+#comp-m1bgra585{left:calc(-193*var(--u) + 25%);top:calc(408*var(--u));width:calc(432*var(--u));height:auto}
+#comp-m1bgra5a3{left:calc(0*var(--u) + 50%);top:calc(155*var(--u));width:calc(-80*var(--u) + 50%);height:calc(519*var(--u))}
+.comp-m1bgra5b2-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bgra5b10{left:calc(-490*var(--u) + 50%);top:calc(80*var(--u));width:calc(980*var(--u));height:auto}
+#comp-m1bgra5c4{left:0;top:calc(188*var(--u));width:100%;height:calc(338*var(--u))}
+#comp-m1bgra5h5__item1{left:calc(-487*var(--u) + 50%);top:calc(187*var(--u));width:calc(306*var(--u));height:calc(339.6*var(--u))}
+.comp-m1bgra5h5__item1-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bgra5k__item1{left:calc(-457*var(--u) + 50%);top:calc(268*var(--u));width:calc(245*var(--u));height:auto}
+#comp-m1bgra5k5__item1{left:calc(-457*var(--u) + 50%);top:calc(314*var(--u));width:calc(246*var(--u));height:auto}
+#comp-m1bgra5h5__item2{left:calc(-153*var(--u) + 50%);top:calc(187*var(--u));width:calc(306*var(--u));height:calc(339.6*var(--u))}
+.comp-m1bgra5h5__item2-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bgra5k__item2{left:calc(-123*var(--u) + 50%);top:calc(268*var(--u));width:calc(245*var(--u));height:auto}
+#comp-m1bgra5k5__item2{left:calc(-123*var(--u) + 50%);top:calc(314*var(--u));width:calc(246*var(--u));height:auto}
+#comp-m1bgra5h5__item3{left:calc(181*var(--u) + 50%);top:calc(187*var(--u));width:calc(306*var(--u));height:calc(291*var(--u))}
+.comp-m1bgra5h5__item3-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bgra5k__item3{left:calc(211*var(--u) + 50%);top:calc(268*var(--u));width:calc(245*var(--u));height:auto}
+#comp-m1bgra5k5__item3{left:calc(211*var(--u) + 50%);top:calc(314*var(--u));width:calc(246*var(--u));height:auto}
+.comp-m1bhhdj3-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bhhdjq2{left:calc(-490*var(--u) + 50%);top:calc(30*var(--u));width:calc(980*var(--u));height:calc(301*var(--u))}
+.comp-m1bhhdjq2-dmm0{inset:0;width:100%;height:100%}
+#comp-m1bhhdjr{left:calc(-490*var(--u) + 50%);top:calc(351*var(--u));width:calc(980*var(--u));height:calc(301*var(--u))}
+#comp-m1bhhdjr6{left:calc(-490*var(--u) + 50%);top:calc(351*var(--u));width:calc(980*var(--u));height:calc(301*var(--u))}
+.comp-m1bhhdjr6-dmd0{inset:0;width:100%;height:100%}
+.comp-m1bhhdjr6-dmm0{inset:0;width:100%;height:100%}
+#comp-m1bhhdjs10{left:calc(-490*var(--u) + 50%);top:calc(671*var(--u));width:calc(980*var(--u));height:calc(301*var(--u))}
+#comp-m1bhhdjs16{left:calc(-490*var(--u) + 50%);top:calc(671*var(--u));width:calc(384*var(--u));height:calc(301*var(--u))}
+.comp-m1bhhdjs16-dmd0{inset:0;width:100%;height:100%}
+.comp-m1bhhdjs16-dmm0{inset:0;width:100%;height:100%}
+#comp-m1bhhdjt7{left:calc(-86*var(--u) + 50%);top:calc(671*var(--u));width:calc(576*var(--u));height:calc(301*var(--u))}
+.comp-m1bhhdjt7-dmd0{inset:0;width:100%;height:100%}
+.comp-m1bhhdjt7-dmm0{inset:0;width:100%;height:100%}
+.comp-m1bj0s1e-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bj0s1x2{left:calc(-297*var(--u) + 50%);top:calc(70*var(--u));width:calc(586*var(--u));height:auto}
+#comp-m1bj0s1y{left:calc(-297*var(--u) + 50%);top:calc(160*var(--u));width:calc(40*var(--u));height:calc(5*var(--u))}
+.comp-m1bj0s1y-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bj0s1y5{left:calc(-297*var(--u) + 50%);top:calc(201*var(--u));width:calc(594*var(--u));height:auto}
+#comp-m1bj5u0t{left:calc(-490*var(--u) + 50%);top:calc(53*var(--u));width:calc(177*var(--u));height:calc(40*var(--u))}
+.comp-m1bj5u0t-dmd0{inset:0;width:100%;height:100%}
+.comp-m1bj5u0t-dms0{left:calc(14.8*var(--u));top:calc(14*var(--u));width:calc(12*var(--u));height:calc(12*var(--u))}
+.comp-m1bj5u0t-dml0{left:calc(30.8*var(--u));top:calc(11*var(--u));width:calc(131.4*var(--u));height:calc(18*var(--u))}
+#comp-m1bj5km7{left:calc(313*var(--u) + 50%);top:calc(53*var(--u));width:calc(177*var(--u));height:calc(40*var(--u))}
+.comp-m1bj5km7-dmd0{inset:0;width:100%;height:100%}
+.comp-m1bj5km7-dms0{left:calc(134.8*var(--u));top:calc(14*var(--u));width:calc(12*var(--u));height:calc(12*var(--u))}
+.comp-m1bj5km7-dml0{left:calc(30.2*var(--u));top:calc(11*var(--u));width:calc(100.6*var(--u));height:calc(18*var(--u))}
+.SITE_FOOTER-dmd0{inset:0;width:100%;height:100%}
+.SITE_FOOTER-dmd1{left:calc(-490*var(--u) + 50%);top:0;width:calc(980*var(--u));height:calc(198*var(--u))}
+#comp-m1bj8ctk{left:max(0px,calc(-657*var(--u) + 50%));top:calc(75*var(--u));width:calc(307*var(--u));height:auto}
+#comp-m1bj8ctv{left:max(0px,calc(-657*var(--u) + 50%));top:calc(121*var(--u));width:calc(307*var(--u));height:auto}
+#comp-m1b6xkci{left:calc(40*var(--u));top:calc(191*var(--u));width:calc(-80*var(--u) + 100%);height:calc(7*var(--u))}
+.comp-m1b6xkci-dmd0{inset:0;width:100%;height:100%}
+#SITE_HEADER{height:calc(62*var(--u))}
+.SITE_HEADER-md0{display:none}
+.SITE_HEADER-md1{display:none}
+.SITE_HEADER-md2{display:none}
+.SITE_HEADER-md3{display:none}
+#comp-m1bgra53{height:calc(692*var(--u))}
+#comp-m1bgra5b2{height:calc(587*var(--u))}
+#comp-m1bhhdj3{height:calc(1002*var(--u))}
+#comp-m1bj0s1e{height:calc(627.5*var(--u))}
+#comp-m1bj535s{height:calc(93*var(--u))}
+#SITE_FOOTER{height:calc(198*var(--u))}
+@media (max-width:767.98px){
+#SITE_HEADER{height:calc(59*var(--u));display:block}
+.SITE_HEADER-dd0{display:none}
+.SITE_HEADER-dd1{display:none}
+.SITE_HEADER-md0{inset:0;width:100%;height:100%}
+.SITE_HEADER-md1{left:calc(10*var(--u));top:0;width:calc(300*var(--u));height:calc(59*var(--u))}
+.SITE_HEADER-md2{left:calc(287*var(--u));top:calc(23*var(--u));width:calc(22*var(--u));height:calc(2*var(--u))}
+.SITE_HEADER-md3{left:calc(287*var(--u));top:calc(33*var(--u));width:calc(22*var(--u));height:calc(2*var(--u))}
+#comp-m1b6xkbi{display:none}
+#comp-m1b6xkbo15{display:none}
+#comp-m1b6xkbs2{display:block;left:calc(7*var(--u));top:calc(8*var(--u));width:calc(82*var(--u));height:calc(42*var(--u))}
+.comp-m1b6xkbs2-dml0{left:calc(1*var(--u));top:calc(9.1*var(--u));width:calc(64.5*var(--u));height:calc(23.7*var(--u))}
+#comp-m1b6xkbm1{display:none}
+#comp-m1js20ow{display:block;left:calc(111*var(--u));top:calc(8*var(--u));width:calc(60*var(--u));height:calc(42*var(--u))}
+.comp-m1js20ow-dml0{left:calc(1*var(--u));top:calc(10.5*var(--u));width:calc(40.7*var(--u));height:calc(20.9*var(--u))}
+#comp-m1b6xkbt17{display:none}
+#comp-m1js23tu{display:block;left:calc(197*var(--u));top:calc(8*var(--u));width:calc(69*var(--u));height:calc(42*var(--u))}
+.comp-m1js23tu-dml0{left:calc(1*var(--u));top:calc(10.5*var(--u));width:calc(58.4*var(--u));height:calc(20.9*var(--u))}
+#comp-m1b6xkbu6{display:none}
+#comp-m1b6xkbv5{display:none}
+.comp-m1b6xkbv5-ds0{display:none}
+#comp-m1bgra53{height:calc(502.4*var(--u));display:block}
+#comp-m1bgra55{display:block;left:0;top:0;width:calc(320*var(--u));height:calc(130*var(--u))}
+#comp-m1bgra556{display:none}
+#comp-m1bgra561{display:block;left:0;top:0;width:calc(320*var(--u));height:calc(130*var(--u))}
+.comp-m1bgra561-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bgra57{display:block;left:0;top:calc(130*var(--u));width:calc(320*var(--u));height:calc(372.4*var(--u))}
+#comp-m1bgra576{display:block;left:0;top:calc(130*var(--u));width:calc(320*var(--u));height:calc(372.4*var(--u))}
+.comp-m1bgra576-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bgra5712{display:block;left:calc(20*var(--u));top:calc(170*var(--u));width:calc(280*var(--u));height:auto}
+#comp-m1bgra585{display:block;left:calc(20*var(--u));top:calc(228*var(--u));width:calc(280*var(--u));height:auto}
+#comp-m1bgra5a3{display:none}
+#comp-m1bgra5b2{height:calc(873*var(--u));display:block}
+.comp-m1bgra5b2-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bgra5b10{display:block;left:calc(20*var(--u));top:calc(20*var(--u));width:calc(280*var(--u));height:auto}
+#comp-m1bgra5c4{display:block;left:0;top:calc(73*var(--u));width:calc(320*var(--u));height:calc(800*var(--u))}
+#comp-m1bgra5h5__item1{display:block;left:calc(-1*var(--u));top:calc(72*var(--u));width:calc(322*var(--u));height:calc(273*var(--u))}
+.comp-m1bgra5h5__item1-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bgra5k__item1{display:block;left:calc(20*var(--u));top:calc(114*var(--u));width:calc(280*var(--u));height:auto}
+#comp-m1bgra5k5__item1{display:block;left:calc(20*var(--u));top:calc(160*var(--u));width:calc(280*var(--u));height:auto}
+#comp-m1bgra5h5__item2{display:block;left:calc(-1*var(--u));top:calc(373*var(--u));width:calc(322*var(--u));height:calc(249*var(--u))}
+.comp-m1bgra5h5__item2-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bgra5k__item2{display:block;left:calc(20*var(--u));top:calc(415*var(--u));width:calc(280*var(--u));height:auto}
+#comp-m1bgra5k5__item2{display:block;left:calc(20*var(--u));top:calc(461*var(--u));width:calc(280*var(--u));height:auto}
+#comp-m1bgra5h5__item3{display:block;left:calc(-1*var(--u));top:calc(650*var(--u));width:calc(322*var(--u));height:calc(224*var(--u))}
+.comp-m1bgra5h5__item3-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bgra5k__item3{display:block;left:calc(20*var(--u));top:calc(692*var(--u));width:calc(280*var(--u));height:auto}
+#comp-m1bgra5k5__item3{display:block;left:calc(20*var(--u));top:calc(738*var(--u));width:calc(280*var(--u));height:auto}
+#comp-m1bhhdj3{height:calc(866*var(--u));display:block}
+.comp-m1bhhdj3-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bhhdjq2{display:block;left:0;top:calc(20*var(--u));width:calc(320*var(--u));height:calc(200*var(--u))}
+.comp-m1bhhdjq2-dmm0{inset:0;width:100%;height:100%}
+#comp-m1bhhdjr{display:block;left:0;top:calc(230*var(--u));width:calc(320*var(--u));height:calc(176*var(--u))}
+#comp-m1bhhdjr6{display:block;left:0;top:calc(230*var(--u));width:calc(320*var(--u));height:calc(176*var(--u))}
+.comp-m1bhhdjr6-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bhhdjs10{display:block;left:0;top:calc(406*var(--u));width:calc(320*var(--u));height:calc(440*var(--u))}
+#comp-m1bhhdjs16{display:block;left:0;top:calc(406*var(--u));width:calc(320*var(--u));height:calc(200*var(--u))}
+.comp-m1bhhdjs16-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bhhdjt7{display:block;left:0;top:calc(626*var(--u));width:calc(320*var(--u));height:calc(200*var(--u))}
+.comp-m1bhhdjt7-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bj0s1e{height:calc(876.7*var(--u));display:block}
+.comp-m1bj0s1e-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bj0s1x2{display:block;left:calc(20*var(--u));top:calc(64*var(--u));width:calc(280*var(--u));height:auto}
+#comp-m1bj0s1y{display:block;left:calc(20*var(--u));top:calc(166*var(--u));width:calc(40*var(--u));height:calc(5*var(--u))}
+.comp-m1bj0s1y-dmd0{inset:0;width:100%;height:100%}
+#comp-m1bj0s1y5{display:block;left:calc(20*var(--u));top:calc(208*var(--u));width:calc(280*var(--u));height:auto}
+#comp-m1bj535s{height:calc(134*var(--u));display:block}
+#comp-m1bj5u0t{display:block;left:calc(60*var(--u));top:calc(20*var(--u));width:calc(200*var(--u));height:calc(42*var(--u))}
+.comp-m1bj5u0t-dmd0{inset:0;width:100%;height:100%}
+.comp-m1bj5u0t-dms0{left:calc(26.3*var(--u));top:calc(15*var(--u));width:calc(12*var(--u));height:calc(12*var(--u))}
+.comp-m1bj5u0t-dml0{left:calc(42.3*var(--u));top:calc(12*var(--u));width:calc(131.4*var(--u));height:calc(18*var(--u))}
+#comp-m1bj5km7{display:block;left:calc(80*var(--u));top:calc(72*var(--u));width:calc(160*var(--u));height:calc(42*var(--u))}
+.comp-m1bj5km7-dmd0{inset:0;width:100%;height:100%}
+.comp-m1bj5km7-dms0{left:calc(126.3*var(--u));top:calc(15*var(--u));width:calc(12*var(--u));height:calc(12*var(--u))}
+.comp-m1bj5km7-dml0{left:calc(21.7*var(--u));top:calc(12*var(--u));width:calc(100.6*var(--u));height:calc(18*var(--u))}
+#SITE_FOOTER{height:calc(88.6*var(--u));display:block}
+.SITE_FOOTER-dmd0{inset:0;width:100%;height:100%}
+.SITE_FOOTER-dmd1{left:calc(10*var(--u));top:0;width:calc(300*var(--u));height:calc(88.6*var(--u))}
+#comp-m1bj8ctk{display:block;left:calc(20*var(--u));top:calc(20*var(--u));width:calc(280*var(--u));height:auto}
+#comp-m1bj8ctv{display:block;left:calc(20*var(--u));top:calc(55.2*var(--u));width:calc(280*var(--u));height:auto}
+#comp-m1b6xkci{display:block;left:0;top:calc(87.6*var(--u));width:calc(320*var(--u));height:calc(1*var(--u))}
+.comp-m1b6xkci-dmd0{inset:0;width:100%;height:100%}
+}
+@media (prefers-reduced-motion:no-preference){
+@media (min-width:768px){.mo #comp-m1b6xkbs2:not(.mo-done){animation:motion-fadeIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;}.mo #comp-m1js20ow:not(.mo-done){animation:motion-fadeIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;}.mo #comp-m1js23tu:not(.mo-done){animation:motion-fadeIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;}.mo #comp-m1bj8ctk:not(.mo-done){animation:motion-fadeIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;}.mo #comp-m1bj8ctv:not(.mo-done){animation:motion-fadeIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;}.mo #comp-m1b6xkci:not(.mo-done){animation:motion-fadeIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;}.mo #comp-m1bgra5h5__item1:not(.mo-done),.mo #comp-m1bgra5k__item1:not(.mo-done),.mo #comp-m1bgra5k5__item1:not(.mo-done){animation:motion-floatIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;--motion-translate-x:0px;--motion-translate-y:60px;}.mo #comp-m1bgra5h5__item2:not(.mo-done),.mo #comp-m1bgra5k__item2:not(.mo-done),.mo #comp-m1bgra5k5__item2:not(.mo-done){animation:motion-floatIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;--motion-translate-x:0px;--motion-translate-y:60px;}.mo #comp-m1bgra5h5__item3:not(.mo-done),.mo #comp-m1bgra5k__item3:not(.mo-done),.mo #comp-m1bgra5k5__item3:not(.mo-done){animation:motion-floatIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;--motion-translate-x:0px;--motion-translate-y:60px;}}
+@media (max-width:767.98px){.mo #comp-m1b6xkbs2:not(.mo-done){animation:motion-fadeIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;}.mo #comp-m1js20ow:not(.mo-done){animation:motion-fadeIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;}.mo #comp-m1js23tu:not(.mo-done){animation:motion-fadeIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;}.mo #comp-m1bj8ctk:not(.mo-done){animation:motion-fadeIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;}.mo #comp-m1bj8ctv:not(.mo-done){animation:motion-fadeIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;}.mo #comp-m1b6xkci:not(.mo-done){animation:motion-fadeIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;}.mo #comp-m1bgra5h5__item1:not(.mo-done),.mo #comp-m1bgra5k__item1:not(.mo-done),.mo #comp-m1bgra5k5__item1:not(.mo-done){animation:motion-floatIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;--motion-translate-x:0px;--motion-translate-y:60px;}.mo #comp-m1bgra5h5__item2:not(.mo-done),.mo #comp-m1bgra5k__item2:not(.mo-done),.mo #comp-m1bgra5k5__item2:not(.mo-done){animation:motion-floatIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;--motion-translate-x:0px;--motion-translate-y:60px;}.mo #comp-m1bgra5h5__item3:not(.mo-done),.mo #comp-m1bgra5k__item3:not(.mo-done),.mo #comp-m1bgra5k5__item3:not(.mo-done){animation:motion-floatIn 1200ms 1ms cubic-bezier(0.445, 0.05, 0.55, 0.95) backwards 1 paused;animation-composition:replace;--motion-translate-x:0px;--motion-translate-y:60px;}}
+}
+</style>
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
-<header class="hdr">
-  <nav aria-label="Site">
-    <a href="../charlie-cohen-resume-2025.pdf" target="_blank" rel="noopener">Resume</a>
-    <a href="../">Home</a>
-    <a href="../contact-7/">Contact</a>
-  </nav>
-</header>
-<main>
-<section class="hero"><div class="hero-in">
-  <div class="hero-img" style="background-image:url('../assets/img/d0f392_400e1726df8f4bbeb9364412167087e8.webp')" role="img" aria-label="Engine Subframes"></div>
-  <div class="hero-card"><h1 style="font-size:clamp(31px, 5.09vw, 56px)"><span style="font-size:clamp(31px, 5.09vw, 56px)">Engine Subframes</span></h1><div class="rt"><p style="font-size:16px;line-height:1.8em"><span style="font-size:16px">For the 2023-2024 Baja competition season, I designed our engine subframes. The subframes fix the engine in place, absorb vibrations from the engine to prevent fatigue failures in the frame, and must be able to last for at least forty hours without failing.</span></p></div></div>
-</div></section>
-<section class="sec summary"><div class="wrap"><div class="rt center"><h2 style="font-size:clamp(21px, 3.45vw, 38px);text-align:center"><span style="font-size:clamp(21px, 3.45vw, 38px)">Summary</span></h2></div><div class="rep"><div class="card"><h3 style="font-size:clamp(16px, 1.82vw, 20px);text-align:center"><span style="font-size:clamp(16px, 1.82vw, 20px)">What:</span></h3><ul style="font-size:16px;text-align:left">
-	<li style="line-height:1.6em">
-	<p style="font-size:16px;line-height:1.6em"><span style="font-size:16px">Sets placement of engine</span></p>
-	</li>
-	<li>
-	<p style="font-size:16px;line-height:1.6em"><span style="font-size:16px">Absorbs vibrations from the engine</span></p>
-	</li>
-	<li>
-	<p style="font-size:16px;line-height:1.6em"><span style="font-size:16px">Must be as lightweight as possible while withstanding 40-hour lifespan</span></p>
-	</li>
-</ul></div><div class="card"><h3 style="font-size:clamp(16px, 1.82vw, 20px);text-align:center"><span style="font-size:clamp(16px, 1.82vw, 20px)">How:</span></h3><ul style="font-size:16px">
-	<li style="line-height:1.6em">
-	<p style="font-size:16px;line-height:1.6em"><span style="font-size:16px">Designed with SolidWorks</span></p>
-	</li>
-	<li style="line-height:1.6em">
-	<p style="font-size:16px;line-height:1.6em"><span style="font-size:16px">Matched geometry of chassis and engine</span></p>
-	</li>
-	<li style="line-height:1.6em">
-	<p style="font-size:16px;line-height:1.6em"><span style="font-size:16px">Analyzed cyclic and 3G landing loading from engine using Ansys</span></p>
-	</li>
-</ul></div><div class="card"><h3 style="font-size:clamp(16px, 1.82vw, 20px);text-align:center"><span style="font-size:clamp(16px, 1.82vw, 20px)">Result:</span></h3><ul style="font-size:16px">
-	<li>
-	<p style="font-size:16px"><span style="font-size:16px">30% weight reduction from prior design</span></p>
-	</li>
-	<li>
-	<p style="font-size:16px"><span style="font-size:16px">Passed analysis with factor of safety of 2.0</span></p>
-	</li>
-	<li>
-	<p style="font-size:16px"><span style="font-size:16px">Did not fail</span></p>
-	</li>
-</ul></div></div></div></section>
-<section class="sec" style="background-color:#EDEDED"><div class="wrap"><div class="wide" style="aspect-ratio:980/301;background-image:url('../assets/img/d0f392_f077e41eeee349dab178579b9d1e7690.webp')" role="img" aria-label="Subframe side view"></div><div class="strip" style=""><div class="strip-in"><div class="col col-img" style="flex:980 1 0;min-height:301px;background-image:url('../assets/img/d0f392_800bace5daf14371873c2963163d8e6a.webp');background-size:cover;background-position:center;background-repeat:no-repeat"></div></div></div><div class="strip" style=""><div class="strip-in"><div class="col col-img" style="flex:384 1 0;min-height:301px;background-image:url('../assets/img/d0f392_126115bf1f1a42dc8fd2c66dded42e01.webp');background-size:cover;background-position:center;background-repeat:no-repeat"></div><div class="col col-img" style="flex:576 1 0;min-height:301px;background-color:#FFFFFF;background-image:url('../assets/img/d0f392_9f21b7b29dc7409a94e8e45e419ae776.webp');background-size:contain;background-position:center;background-repeat:no-repeat"></div></div></div></div></section>
-<section class="sec skill"><div class="wrap narrow"><h2 style="font-size:clamp(21px, 3.45vw, 38px)">Skill: FEA &amp; Iterative Design</h2><hr class="ln short"><p style="font-size:18px;line-height:1.8em"><span style="font-size:18px">Designing and analyzing the subframes was a crucial introduction to FEA and iterative design for me. Since the subframes experience cyclic loading, and one of their primary purposes is damping vibrations, it was critical that the subframes withstand the engine cyclic loading and not require replacement throughout our competition season. It was also important that the subframes be as light as possible, so that our team could meet our vehicle-level weight goals. To design strong and lightweight subframes, I employed iterative design methods to analyze the structure and reduce weight, ultimately creating subframes that were lighter than the prior year&#x27;s and lasted all season.</span></p></div></section>
-<nav class="sec pn" aria-label="Projects"><div class="wrap pn-in"><a class="btn prev" href="../dock-pit-forming-system/">Previous Project</a><a class="btn next" href="../frame-fixtures/">Next Project</a></div></nav>
-</main>
-<footer class="ftr">
-  <div class="ftr-in">
-    <p class="ftr-name">Charlie Cohen</p>
-    <p><a href="mailto:charlie@charliecohen.com">charlie@charliecohen.com</a></p>
-  </div>
-  <hr class="ln ftr-ln">
-</footer>
+<div class="page">
+<header id="SITE_HEADER" class="blk hdr"><i class="ly dc SITE_HEADER-dd0" style="background-color:rgb(237, 237, 237)"></i><i class="ly dc SITE_HEADER-dd1" style="background-color:rgb(237, 237, 237)"></i><i class="ly dc SITE_HEADER-md0" style="background-color:rgb(237, 237, 237)"></i><i class="ly dc SITE_HEADER-md1" style="background-color:rgb(237, 237, 237)"></i><i class="ly dc SITE_HEADER-md2" style="background-color:rgb(61, 61, 61)"></i><i class="ly dc SITE_HEADER-md3" style="background-color:rgb(61, 61, 61)"></i><div id="comp-m1b6xkbi" class="n"></div><div id="comp-m1b6xkbo15" class="n"></div><a id="comp-m1b6xkbs2" class="n lnk" href="../charlie-cohen-resume-2025.pdf" target="_blank" rel="noopener" data-mo><span class="lb comp-m1b6xkbs2-dml0" style="--fs:16;--lh:calc(22.4*var(--u));--ls:0;--fsm:16.93;--lhm:calc(23.71*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)">Resume</span></a><div id="comp-m1b6xkbm1" class="n"></div><a id="comp-m1js20ow" class="n lnk" href="../" data-mo><span class="lb comp-m1js20ow-dml0" style="--fs:16;--lh:calc(22.4*var(--u));--ls:0;--fsm:14.93;--lhm:calc(20.91*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)">Home</span></a><div id="comp-m1b6xkbt17" class="n"></div><a id="comp-m1js23tu" class="n lnk" href="../contact-7/" data-mo><span class="lb comp-m1js23tu-dml0" style="--fs:16;--lh:calc(22.4*var(--u));--ls:0;--fsm:14.93;--lhm:calc(20.91*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)">Contact</span></a><div id="comp-m1b6xkbu6" class="n"></div><button type="button" id="comp-m1b6xkbv5" class="n hb-open" aria-label="Open navigation menu" aria-controls="hbm" aria-expanded="false"><span class="ly sv comp-m1b6xkbv5-ds0"><svg width="100%" height="100%" aria-hidden="true" focusable="false" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="rgb(61, 61, 61)">
+    <g fill="rgb(61, 61, 61)">
+        <path d="M156 84v6H44v-6h112z" fill="rgb(61, 61, 61)"></path>
+        <path d="M156 110v6H44v-6h112z" fill="rgb(61, 61, 61)"></path>
+    </g>
+</svg></span></button><div class="hbm" id="hbm" hidden><div class="hbm-bg" data-hb-close></div><div class="hbm-panel" role="dialog" aria-modal="true" aria-label="Site menu"><button class="hbm-x" type="button" data-hb-close aria-label="Close menu"><svg viewBox="0 0 24 24" width="100%" height="100%" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke="#3D3D3D" stroke-width="1.6" fill="none"/></svg></button><nav aria-label="Projects"><div class="hbm-item"><button type="button" class="hbm-top" aria-expanded="false"><svg class="hbm-chev" viewBox="0 0 16 11" aria-hidden="true"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z" fill="#3D3D3D"/></svg>Projects</button><ul class="hbm-sub"><li><a href="../brake-calipers/">Brake Calipers</a></li><li><a href="../dock-pit-forming-system/">Dock Pit Forming System</a></li><li><a href="../engine-subframes/">Engine Subframes</a></li><li><a href="../frame-fixtures/">Frame Fixtures</a></li><li><a href="../mae2250-swiss-guitarmy-knife/">MAE2250: Swiss Guitarmy Knife</a></li><li><a href="../nonstructural-tabs/">Nonstructural Tabs</a></li></ul></div></nav></div></div><button type="button" class="hb-m" aria-label="Open navigation menu" aria-controls="hbm" aria-expanded="false"><span></span><span></span></button></header>
+<section id="comp-m1bgra53" class="blk"><div id="comp-m1bgra55" class="n"></div><div id="comp-m1bgra556" class="n"></div><div id="comp-m1bgra561" class="n"><i class="ly dc comp-m1bgra561-dmd0" style="background-color:rgb(255, 255, 255)"></i><img class="ly md bgm comp-m1bgra561-dmm0" src="../assets/img/d0f392_400e1726df8f4bbeb9364412167087e8.webp" alt="" aria-hidden="true" style="object-fit:cover;object-position:50% 50%"></div><div id="comp-m1bgra57" class="n"></div><div id="comp-m1bgra576" class="n" data-fx="BgFadeOut"><i class="ly dc comp-m1bgra576-dmd0" style="background-color:rgb(255, 255, 255)"></i></div><div id="comp-m1bgra5712" class="n rt"><div class="rtx"><h1 style="--fs:56;--lh:normal;--ls:0;--fsm:30;--lhm:normal;--lsm:0;font-family:var(--display);font-weight:700;color:rgb(61, 61, 61);margin:0"><span style="--fs:56;--lh:normal;--ls:0;--fsm:30;--lhm:normal;--lsm:0;font-family:var(--display);font-weight:700;color:rgb(61, 61, 61)">Engine Subframes</span></h1></div></div><div id="comp-m1bgra585" class="n rt"><div class="rtx"><p style="--fs:16;--lh:calc(28.8*var(--u));--ls:0;--fsm:16;--lhm:calc(28.8*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0"><span style="--fs:16;--lh:calc(28.8*var(--u));--ls:0;--fsm:16;--lhm:calc(28.8*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)">For the 2023-2024 Baja competition season, I designed our engine subframes. The subframes fix the engine in place, absorb vibrations from the engine to prevent fatigue failures in the frame, and must be able to last for at least forty hours without failing.</span></p></div></div><div id="comp-m1bgra5a3" class="n"></div></section>
+<section id="comp-m1bgra5b2" class="blk"><i class="ly dc comp-m1bgra5b2-dmd0" style="background-color:rgb(237, 237, 237)"></i><div id="comp-m1bgra5b10" class="n rt"><div class="rtx"><h2 style="--fs:38;--lh:normal;--ls:0;--fsm:26;--lhm:normal;--lsm:0;font-family:var(--display);font-weight:700;color:rgb(61, 61, 61);text-align:center;margin:0"><span style="--fs:38;--lh:normal;--ls:0;--fsm:26;--lhm:normal;--lsm:0;font-family:var(--display);font-weight:700;color:rgb(61, 61, 61);text-align:center">Summary</span></h2></div></div><div id="comp-m1bgra5c4" class="n"></div><div id="comp-m1bgra5h5__item1" class="n" data-mo data-mo-group="comp-m1bgra5k__item1 comp-m1bgra5k5__item1"><i class="ly dc comp-m1bgra5h5__item1-dmd0" style="border-top:calc(1*var(--u)) solid rgb(0, 0, 0);border-right:calc(1*var(--u)) solid rgb(0, 0, 0);border-bottom:calc(1*var(--u)) solid rgb(0, 0, 0);border-left:calc(1*var(--u)) solid rgb(0, 0, 0)"></i></div><div id="comp-m1bgra5k__item1" class="n rt"><div class="rtx"><h3 style="--fs:20;--lh:normal;--ls:0;--fsm:20;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);text-align:center;margin:0"><span style="--fs:20;--lh:normal;--ls:0;--fsm:20;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);text-align:center">What:</span></h3></div></div><div id="comp-m1bgra5k5__item1" class="n rt"><div class="rtx"><ul style="--fs:16;--lh:normal;--ls:0;--fsm:15;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0em 0 0em 0.5em;padding-left:0em;list-style-type:disc">
+<li style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0em 0 0em 1.3em;padding-left:0em">
+<p style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0"><span style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)">Sets placement of engine​</span></p>
+</li>
+<li style="--fs:16;--lh:normal;--ls:0;--fsm:15;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0em 0 0em 1.3em;padding-left:0em">
+<p style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0"><span style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)">Absorbs vibrations from the engine</span></p>
+</li>
+<li style="--fs:16;--lh:normal;--ls:0;--fsm:15;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0em 0 0em 1.3em;padding-left:0em">
+<p style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0"><span style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)">Must be as lightweight as possible while withstanding 40-hour lifespan</span></p>
+</li>
+</ul></div></div><div id="comp-m1bgra5h5__item2" class="n" data-mo data-mo-group="comp-m1bgra5k__item2 comp-m1bgra5k5__item2"><i class="ly dc comp-m1bgra5h5__item2-dmd0" style="border-top:calc(1*var(--u)) solid rgb(0, 0, 0);border-right:calc(1*var(--u)) solid rgb(0, 0, 0);border-bottom:calc(1*var(--u)) solid rgb(0, 0, 0);border-left:calc(1*var(--u)) solid rgb(0, 0, 0)"></i></div><div id="comp-m1bgra5k__item2" class="n rt"><div class="rtx"><h3 style="--fs:20;--lh:normal;--ls:0;--fsm:20;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);text-align:center;margin:0"><span style="--fs:20;--lh:normal;--ls:0;--fsm:20;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);text-align:center">How:</span></h3></div></div><div id="comp-m1bgra5k5__item2" class="n rt"><div class="rtx"><ul style="--fs:16;--lh:normal;--ls:0;--fsm:15;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0em 0 0em 0.5em;padding-left:0em;list-style-type:disc">
+<li style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0em 0 0em 1.3em;padding-left:0em">
+<p style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0"><span style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)">Designed with SolidWorks</span></p>
+</li>
+<li style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0em 0 0em 1.3em;padding-left:0em">
+<p style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0"><span style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)">Matched geometry of chassis and engine</span></p>
+</li>
+<li style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0em 0 0em 1.3em;padding-left:0em">
+<p style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0"><span style="--fs:16;--lh:calc(25.6*var(--u));--ls:0;--fsm:15;--lhm:calc(24*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)">Analyzed cyclic and 3G landing loading from engine using Ansys</span></p>
+</li>
+</ul></div></div><div id="comp-m1bgra5h5__item3" class="n" data-mo data-mo-group="comp-m1bgra5k__item3 comp-m1bgra5k5__item3"><i class="ly dc comp-m1bgra5h5__item3-dmd0" style="border-top:calc(1*var(--u)) solid rgb(0, 0, 0);border-right:calc(1*var(--u)) solid rgb(0, 0, 0);border-bottom:calc(1*var(--u)) solid rgb(0, 0, 0);border-left:calc(1*var(--u)) solid rgb(0, 0, 0)"></i></div><div id="comp-m1bgra5k__item3" class="n rt"><div class="rtx"><h3 style="--fs:20;--lh:normal;--ls:0;--fsm:20;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);text-align:center;margin:0"><span style="--fs:20;--lh:normal;--ls:0;--fsm:20;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);text-align:center">Result:</span></h3></div></div><div id="comp-m1bgra5k5__item3" class="n rt"><div class="rtx"><ul style="--fs:16;--lh:normal;--ls:0;--fsm:15;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0em 0 0em 0.5em;padding-left:0em;list-style-type:disc">
+<li style="--fs:16;--lh:normal;--ls:0;--fsm:15;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0em 0 0em 1.3em;padding-left:0em">
+<p style="--fs:16;--lh:normal;--ls:0;--fsm:15;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0"><span style="--fs:16;--lh:normal;--ls:0;--fsm:15;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)">30% weight reduction from prior design</span></p>
+</li>
+<li style="--fs:16;--lh:normal;--ls:0;--fsm:15;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0em 0 0em 1.3em;padding-left:0em">
+<p style="--fs:16;--lh:normal;--ls:0;--fsm:15;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0"><span style="--fs:16;--lh:normal;--ls:0;--fsm:15;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)">Passed analysis with factor of safety of 2.0</span></p>
+</li>
+<li style="--fs:16;--lh:normal;--ls:0;--fsm:15;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0em 0 0em 1.3em;padding-left:0em">
+<p style="--fs:16;--lh:normal;--ls:0;--fsm:15;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0"><span style="--fs:16;--lh:normal;--ls:0;--fsm:15;--lhm:normal;--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)">Did not fail</span></p>
+</li>
+</ul></div></div></section>
+<section id="comp-m1bhhdj3" class="blk"><i class="ly dc comp-m1bhhdj3-dmd0" style="background-color:rgb(237, 237, 237)"></i><div id="comp-m1bhhdjq2" class="n"><img class="ly md comp-m1bhhdjq2-dmm0" src="../assets/img/d0f392_f077e41eeee349dab178579b9d1e7690.webp" alt="Subframe side view" loading="lazy" style="object-fit:cover;object-position:50% 50%"></div><div id="comp-m1bhhdjr" class="n"></div><div id="comp-m1bhhdjr6" class="n"><i class="ly dc comp-m1bhhdjr6-dmd0" style="background-image:radial-gradient(circle, rgb(196, 196, 196) 0%, rgb(255, 255, 255) 100%)"></i><img class="ly md bgm comp-m1bhhdjr6-dmm0" src="../assets/img/d0f392_800bace5daf14371873c2963163d8e6a.webp" alt="" loading="lazy" aria-hidden="true" style="object-fit:cover;object-position:50% 50%"></div><div id="comp-m1bhhdjs10" class="n"></div><div id="comp-m1bhhdjs16" class="n"><i class="ly dc comp-m1bhhdjs16-dmd0" style="background-image:linear-gradient(67deg, rgb(255, 255, 255) 0%, rgba(196, 196, 196, 0.6) 100%)"></i><img class="ly md bgm comp-m1bhhdjs16-dmm0" src="../assets/img/d0f392_126115bf1f1a42dc8fd2c66dded42e01.webp" alt="" loading="lazy" aria-hidden="true" style="object-fit:cover;object-position:50% 50%"></div><div id="comp-m1bhhdjt7" class="n"><i class="ly dc comp-m1bhhdjt7-dmd0" style="background-color:rgb(255, 255, 255)"></i><img class="ly md bgm comp-m1bhhdjt7-dmm0" src="../assets/img/d0f392_9f21b7b29dc7409a94e8e45e419ae776.webp" alt="" loading="lazy" aria-hidden="true" style="object-fit:none;object-position:50% 50%"></div></section>
+<section id="comp-m1bj0s1e" class="blk"><i class="ly dc comp-m1bj0s1e-dmd0" style="background-color:rgb(196, 196, 196)"></i><div id="comp-m1bj0s1x2" class="n rt"><div class="rtx"><h2 style="--fs:38;--lh:normal;--ls:-0.76;--fsm:28;--lhm:normal;--lsm:-0.56;font-family:var(--display);font-weight:700;color:rgb(61, 61, 61);margin:0">Skill: FEA &amp; Iterative Design</h2></div></div><div id="comp-m1bj0s1y" class="n"><i class="ly dc comp-m1bj0s1y-dmd0" style="border-top:calc(3*var(--u)) solid rgb(61, 61, 61)"></i></div><div id="comp-m1bj0s1y5" class="n rt"><div class="rtx"><p style="--fs:18;--lh:calc(32.4*var(--u));--ls:-0.18;--fsm:16;--lhm:calc(28.8*var(--u));--lsm:-0.16;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0"><span style="--fs:18;--lh:calc(32.4*var(--u));--ls:0;--fsm:16;--lhm:calc(28.8*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)"><span style="--fs:18;--lh:calc(32.4*var(--u));--ls:0;--fsm:16;--lhm:calc(28.8*var(--u));--lsm:0;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)">Designing and analyzing the subframes was a crucial introduction to FEA and iterative design for me. Since the subframes experience cyclic loading, and one of their primary purposes is damping vibrations, it was critical that the subframes withstand the engine cyclic loading and not require replacement throughout our competition season. It was also important that the subframes be as light as possible, so that our team could meet our vehicle-level weight goals. To design strong and lightweight subframes, I employed iterative design methods to analyze the structure and reduce weight, ultimately creating subframes that were lighter than the prior year&#x27;s and lasted all season.</span></span></p></div></div></section>
+<section id="comp-m1bj535s" class="blk"><a id="comp-m1bj5u0t" class="n lnk btn-inv" href="../dock-pit-forming-system/"><i class="ly dc comp-m1bj5u0t-dmd0" style="background-color:rgb(237, 237, 237);border-top:calc(1*var(--u)) solid rgb(31, 31, 31);border-right:calc(1*var(--u)) solid rgb(31, 31, 31);border-bottom:calc(1*var(--u)) solid rgb(31, 31, 31);border-left:calc(1*var(--u)) solid rgb(31, 31, 31)"></i><span class="ly sv comp-m1bj5u0t-dms0"><svg width="100%" height="100%" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="rgb(31, 31, 31)">
+    <g fill="rgb(31, 31, 31)">
+        <path d="M40.8 52.5L18.3 30 40.8 7.5c1.3-1.3 1.3-3.5 0-4.8-1.3-1.3-3.5-1.3-4.8 0L11.1 27.6c-1.3 1.3-1.3 3.5 0 4.8L36 57.3c1.3 1.3 3.5 1.3 4.8 0 1.3-1.3 1.3-3.4 0-4.8z" fill="rgb(31, 31, 31)"></path>
+    </g>
+</svg></span><span class="lb comp-m1bj5u0t-dml0" style="--fs:14;--lh:normal;--ls:1.4;--fsm:14;--lhm:normal;--lsm:1.4;font-family:var(--body);font-weight:400;color:rgb(31, 31, 31);text-align:center">Previous Project</span></a><a id="comp-m1bj5km7" class="n lnk btn-inv" href="../frame-fixtures/"><i class="ly dc comp-m1bj5km7-dmd0" style="background-color:rgb(237, 237, 237);border-top:calc(1*var(--u)) solid rgb(31, 31, 31);border-right:calc(1*var(--u)) solid rgb(31, 31, 31);border-bottom:calc(1*var(--u)) solid rgb(31, 31, 31);border-left:calc(1*var(--u)) solid rgb(31, 31, 31)"></i><span class="ly sv comp-m1bj5km7-dms0"><svg width="100%" height="100%" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="rgb(31, 31, 31)">
+    <g fill="rgb(31, 31, 31)">
+        <path d="M46.5 28.9L20.6 3c-.6-.6-1.6-.6-2.2 0l-4.8 4.8c-.6.6-.6 1.6 0 2.2l19.8 20-19.9 19.9c-.6.6-.6 1.6 0 2.2l4.8 4.8c.6.6 1.6.6 2.2 0l21-21 4.8-4.8c.8-.6.8-1.6.2-2.2z" fill="rgb(31, 31, 31)"></path>
+    </g>
+</svg></span><span class="lb comp-m1bj5km7-dml0" style="--fs:14;--lh:normal;--ls:1.4;--fsm:14;--lhm:normal;--lsm:1.4;font-family:var(--body);font-weight:400;color:rgb(31, 31, 31);text-align:center">Next Project</span></a></section>
+<footer id="SITE_FOOTER" class="blk"><i class="ly dc SITE_FOOTER-dmd0" style="background-color:rgb(237, 237, 237)"></i><i class="ly dc SITE_FOOTER-dmd1" style="background-color:rgb(237, 237, 237)"></i><div id="comp-m1bj8ctk" class="n rt" data-mo><div class="rtx"><h2 style="--fs:30;--lh:calc(36*var(--u));--ls:-0.6;--fsm:21;--lhm:calc(25.2*var(--u));--lsm:-0.42;font-family:var(--display);font-weight:700;color:rgb(61, 61, 61);margin:0"><span style="--fs:30;--lh:calc(36*var(--u));--ls:-0.6;--fsm:21;--lhm:calc(25.2*var(--u));--lsm:-0.42;font-family:var(--display);font-weight:700;color:rgb(61, 61, 61)"><a style="--fs:30;--lh:calc(36*var(--u));--ls:-0.6;--fsm:21;--lhm:calc(25.2*var(--u));--lsm:-0.42;font-family:var(--display);font-weight:700;color:rgb(61, 61, 61)" href="../">Charlie Cohen</a></span></h2></div></div><div id="comp-m1bj8ctv" class="n rt" data-mo><div class="rtx"><p style="--fs:16;--lh:calc(22.4*var(--u));--ls:-0.16;--fsm:16;--lhm:calc(22.4*var(--u));--lsm:-0.16;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);margin:0"><span style="--fs:16;--lh:calc(22.4*var(--u));--ls:-0.16;--fsm:16;--lhm:calc(22.4*var(--u));--lsm:-0.16;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61);text-decoration-line:underline"><a style="--fs:16;--lh:calc(22.4*var(--u));--ls:-0.16;--fsm:16;--lhm:calc(22.4*var(--u));--lsm:-0.16;font-family:var(--body);font-weight:400;color:rgb(61, 61, 61)" href="mailto:charlie@charliecohen.com">charlie@charliecohen.com</a></span></p></div></div><div id="comp-m1b6xkci" class="n" data-mo><i class="ly dc comp-m1b6xkci-dmd0" style="border-top:calc(1*var(--u)) solid rgb(61, 61, 61)"></i></div></footer>
+</div>
 </body>
 </html>
