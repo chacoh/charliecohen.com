@@ -89,3 +89,28 @@ button.n{background:none;border:0;padding:0;cursor:pointer;color:inherit;font:in
 @keyframes motion-slideIn{0.0001%{opacity:var(--comp-opacity,1);transform:translate(var(--motion-translate-x,-100%),var(--motion-translate-y,0%));clip-path:var(--motion-clip-start,polygon(0% 20%,100% 20%,100% 100%,0% 100%))}100%{transform:translate(0px,0px);clip-path:polygon(0% 0%,100% 0%,100% 100%,0% 100%)}}
 .mo .mo-run{animation-play-state:running!important}
 @media (prefers-reduced-motion:reduce){.hdr,.hbm-panel,.hbm-bg,.ss-slide,.lnk .lb,.btn-inv .dc,.btn-inv .lb{transition:none}}
+/* home gallery hover (Wix pro-gallery): rgba(196,196,196,.71) overlay over the image, project title
+   in Sora 700 40/50 #3D3D3D centred with 30px padding; overlay fades .2s, title .4s; hidden on touch/mobile */
+.gl-ov{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:calc(30*var(--u));text-align:center;pointer-events:none}
+.gl-ov::before{content:"";position:absolute;inset:0;background:rgba(196,196,196,.71);opacity:0;transition:opacity .2s}
+.gl-t{position:relative;font:700 calc(40*var(--u))/calc(50*var(--u)) var(--display);letter-spacing:normal;color:#3D3D3D;opacity:0;transition:opacity .4s}
+@media (hover:hover) and (min-width:768px){
+  .gl:hover .gl-ov::before,.gl:focus-visible .gl-ov::before,.gl:hover .gl-t,.gl:focus-visible .gl-t{opacity:1}
+}
+/* page transition: Wix "OutIn" - old page content fades out (.35s cubic-bezier(.22,1,.36,1)),
+   then the new one fades in (.35s cubic-bezier(.64,0,.78,0), .35s delay); header and footer swap in place */
+@keyframes out-in-old{to{opacity:0}}
+@keyframes out-in-new{0%{opacity:0}}
+@media (prefers-reduced-motion:no-preference){
+  @view-transition{navigation:auto}
+  #SITE_HEADER{view-transition-name:header-group}
+  #SITE_FOOTER{view-transition-name:footer-group}
+  ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none}
+  ::view-transition-old(root){animation:.35s cubic-bezier(.22,1,.36,1) forwards out-in-old}
+  ::view-transition-new(root){animation:.35s cubic-bezier(.64,0,.78,0) .35s backwards out-in-new}
+  /* JS fallback for browsers without cross-document view transitions */
+  html.pt-out .page>.blk:not(#SITE_HEADER):not(#SITE_FOOTER){opacity:0;transition:opacity .35s cubic-bezier(.22,1,.36,1)}
+  html.pt-pre .page>.blk:not(#SITE_HEADER):not(#SITE_FOOTER){opacity:0}
+  html.pt-in .page>.blk:not(#SITE_HEADER):not(#SITE_FOOTER){transition:opacity .35s cubic-bezier(.64,0,.78,0)}
+}
+@media (prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}

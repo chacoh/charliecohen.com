@@ -91,6 +91,33 @@
     if (top) top.addEventListener('click', function () { var it = top.parentNode, o = it.classList.toggle('open'); top.setAttribute('aria-expanded', o ? 'true' : 'false'); });
   }
 
+
+  /* page transition fallback (browsers without cross-document view transitions):
+     fade the page content out on internal link clicks, fade it in on the next page */
+  var root = d.documentElement;
+  if (!window.CSSViewTransitionRule && !reduce) {
+    if (root.classList.contains('pt-pre')) {
+      requestAnimationFrame(function () { requestAnimationFrame(function () {
+        root.classList.add('pt-in'); root.classList.remove('pt-pre');
+        setTimeout(function () { root.classList.remove('pt-in'); }, 450);
+      }); });
+    }
+    d.addEventListener('click', function (e) {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      var a = e.target.closest && e.target.closest('a[href]');
+      if (!a || (a.target && a.target !== '_self') || a.hasAttribute('download')) return;
+      var u = new URL(a.href, location.href);
+      if (u.origin !== location.origin || /\.(pdf|png|jpe?g|webp|mp4)$/i.test(u.pathname)) return;
+      if (u.pathname === location.pathname && u.search === location.search) return; /* same page / hash link */
+      e.preventDefault();
+      try { sessionStorage.setItem('pt', String(Date.now())); } catch (err) {}
+      root.classList.add('pt-out');
+      setTimeout(function () { location.href = u.href; }, 350);
+    });
+  }
+  /* back/forward cache: never come back to a faded-out page */
+  addEventListener('pageshow', function (e) { if (e.persisted) root.classList.remove('pt-out', 'pt-pre', 'pt-in'); });
+
   /* respect reduced motion for the background video */
   if (reduce) d.querySelectorAll('video[autoplay]').forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); });
 })();
