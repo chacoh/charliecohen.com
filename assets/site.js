@@ -92,6 +92,28 @@
   }
 
 
+
+  /* home gallery on touch: first tap shows the overlay + title, second tap on the same tile opens it,
+     tapping anywhere else clears it (Wix pro-gallery mobile behaviour). Mouse and keyboard unaffected. */
+  var tiles = [].slice.call(d.querySelectorAll('a.gl'));
+  if (tiles.length) {
+    var lastPtr = '', noHover = window.matchMedia ? matchMedia('(hover: none)') : { matches: false };
+    d.addEventListener('pointerdown', function (e) { lastPtr = e.pointerType || ''; }, true);
+    d.addEventListener('keydown', function () { lastPtr = 'key'; }, true);
+    var clearTaps = function (except) { tiles.forEach(function (t) { if (t !== except) t.classList.remove('is-tap'); }); };
+    tiles.forEach(function (t) {
+      t.addEventListener('click', function (e) {
+        var touch = lastPtr === 'touch' || lastPtr === 'pen' || (lastPtr === '' && noHover.matches);
+        if (!touch) return;
+        if (t.classList.contains('is-tap')) return; /* second tap: follow the link */
+        e.preventDefault(); /* first tap: reveal only (page-transition handler skips defaultPrevented) */
+        clearTaps(t); t.classList.add('is-tap');
+      });
+    });
+    d.addEventListener('click', function (e) { if (!(e.target.closest && e.target.closest('a.gl'))) clearTaps(null); });
+    addEventListener('pageshow', function (e) { if (e.persisted) clearTaps(null); });
+  }
+
   /* page transition fallback (browsers without cross-document view transitions):
      fade the page content out on internal link clicks, fade it in on the next page */
   var root = d.documentElement;

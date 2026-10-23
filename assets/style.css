@@ -95,8 +95,11 @@ button.n{background:none;border:0;padding:0;cursor:pointer;color:inherit;font:in
 .gl-ov::before{content:"";position:absolute;inset:0;background:rgba(196,196,196,.71);opacity:0;transition:opacity .2s}
 .gl-t{position:relative;font:700 calc(40*var(--u))/calc(50*var(--u)) var(--display);letter-spacing:normal;color:#3D3D3D;opacity:0;transition:opacity .4s}
 @media (hover:hover) and (min-width:768px){
-  .gl:hover .gl-ov::before,.gl:focus-visible .gl-ov::before,.gl:hover .gl-t,.gl:focus-visible .gl-t{opacity:1}
+  .gl:hover .gl-ov::before,.gl:hover .gl-t{opacity:1}
 }
+/* keyboard focus, and the first tap on touch devices (Wix mobile: tap 1 shows, tap 2 opens) */
+.gl:focus-visible .gl-ov::before,.gl:focus-visible .gl-t,.gl.is-tap .gl-ov::before,.gl.is-tap .gl-t{opacity:1}
+.gl{-webkit-tap-highlight-color:transparent}
 /* page transition: Wix "OutIn" - old page content fades out (.35s cubic-bezier(.22,1,.36,1)),
    then the new one fades in (.35s cubic-bezier(.64,0,.78,0), .35s delay); header and footer swap in place */
 @keyframes out-in-old{to{opacity:0}}
